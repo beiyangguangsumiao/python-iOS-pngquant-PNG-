@@ -19,7 +19,7 @@ def pngquantPicture(file):
 
 def dumpStorageImageInfo(imageInfoList):
     
-    output = open('ProjectTools/storageImageInfo.pkl','wb')
+    output = open('storageImageInfo.pkl','wb')
     pickle.dump(imageInfoList, output)
 #    print imageInfoList
     output.close()
@@ -27,8 +27,8 @@ def dumpStorageImageInfo(imageInfoList):
 
 def loadStorageImageInfo():
     
-    if os.path.isfile('ProjectTools/storageImageInfo.pkl'):
-       pkl_file = open('ProjectTools/storageImageInfo.pkl', 'rb')
+    if os.path.isfile('storageImageInfo.pkl'):
+       pkl_file = open('storageImageInfo.pkl', 'rb')
        imageInfoListStorage = pickle.load(pkl_file)
 #       print imageInfoListStorage
        pkl_file.close()
