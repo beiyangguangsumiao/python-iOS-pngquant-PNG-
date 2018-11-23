@@ -13,7 +13,7 @@ def pngquantPicture(file):
     os.system("pngquant -f --ext .png --quality 50-80 \"" + file + "\"")
     filesize = os.path.getsize(file)
     dict = {file: filesize}
-    print dict
+#    print dict
     return dict;
 
 
@@ -21,7 +21,7 @@ def dumpStorageImageInfo(imageInfoList):
     
     output = open('ProjectTools/storageImageInfo.pkl','wb')
     pickle.dump(imageInfoList, output)
-    print imageInfoList
+#    print imageInfoList
     output.close()
 
 
